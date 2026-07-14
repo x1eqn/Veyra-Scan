@@ -1,0 +1,36 @@
+{
+  "clean_library_like": {
+    "max_verdict": "LOW_SIGNAL"
+  },
+  "clean_gui_mod": {
+    "max_verdict": "LOW_SIGNAL"
+  },
+  "clean_performance_mod": {
+    "max_verdict": "LOW_SIGNAL"
+  },
+  "suspicious_combat_reachable": {
+    "min_verdict": "SUSPICIOUS",
+    "max_verdict": "CRITICAL",
+    "important_evidence": ["REACHABLE_FEATURE_CONTEXT"]
+  },
+  "suspicious_render_reachable": {
+    "min_verdict": "SUSPICIOUS",
+    "max_verdict": "CRITICAL"
+  },
+  "suspicious_mismatch_version": {
+    "min_verdict": "SUSPICIOUS",
+    "max_verdict": "CRITICAL",
+    "important_evidence": ["VERSION_METADATA_MISMATCH"]
+  },
+  "suspicious_nonstandard_extension": {
+    "min_verdict": "SUSPICIOUS",
+    "max_verdict": "CRITICAL"
+  },
+  "isolated_dead_feature": {
+    "max_verdict": "SUSPICIOUS",
+    "feature_reachability": "ISOLATED"
+  },
+  "shaded_library_false_positive": {
+    "max_verdict": "LOW_SIGNAL"
+  }
+}

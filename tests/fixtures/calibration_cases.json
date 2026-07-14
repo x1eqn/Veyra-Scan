@@ -1,0 +1,82 @@
+[
+  {
+    "name": "clean_library_like",
+    "filename": "clean_library_like.jar",
+    "metadata": {"id": "cleanlib", "name": "Clean Library", "version": "1.0.0"},
+    "classes": [
+      {"path": "com/google/gson/JsonParser.class", "strings": ["JsonParser", "parse", "adapter"]}
+    ]
+  },
+  {
+    "name": "clean_gui_mod",
+    "filename": "clean_gui_mod.jar",
+    "metadata": {"id": "cleangui", "name": "Clean GUI", "version": "1.0.0", "entrypoints": {"client": ["com.example.CleanClient"]}},
+    "classes": [
+      {"path": "com/example/CleanClient.class", "strings": ["com/example/gui/ConfigScreen", "ClientModInitializer"]},
+      {"path": "com/example/gui/ConfigScreen.class", "strings": ["Screen", "Button", "Slider", "Option"]}
+    ]
+  },
+  {
+    "name": "clean_performance_mod",
+    "filename": "clean_performance_mod.jar",
+    "metadata": {"id": "performance", "name": "Performance", "version": "1.2.0"},
+    "classes": [
+      {"path": "com/example/performance/SpeedOverlay.class", "strings": ["speed overlay", "frame time", "render stats"]}
+    ]
+  },
+  {
+    "name": "suspicious_combat_reachable",
+    "filename": "suspicious_combat_reachable.jar",
+    "metadata": {"id": "helper", "name": "Helper", "version": "1.0.0", "environment": "client", "entrypoints": {"client": ["com.xien.Main"]}},
+    "classes": [
+      {"path": "com/xien/Main.class", "strings": ["com/xien/ModuleManager", "ClientModInitializer"]},
+      {"path": "com/xien/ModuleManager.class", "strings": ["com/xien/modules/combat/Reach", "ModuleManager", "Category", "Setting"]},
+      {"path": "com/xien/modules/combat/Reach.class", "strings": ["Reach", "module.combat.reach.name", "range", "4.0", "net/minecraft/class_310", "net/minecraft/class_3966"]}
+    ],
+    "resources": {"assets/helper/lang/en_us.json": "{\"module.combat.reach.name\":\"Reach\",\"setting.reach.distance\":\"Reach Distance\"}"}
+  },
+  {
+    "name": "suspicious_render_reachable",
+    "filename": "suspicious_render_reachable.jar",
+    "metadata": {"id": "overlay", "name": "Overlay", "version": "1.0.0", "environment": "client", "entrypoints": {"client": ["com.overlay.Main"]}},
+    "classes": [
+      {"path": "com/overlay/Main.class", "strings": ["com/overlay/FeatureManager", "ClientModInitializer"]},
+      {"path": "com/overlay/FeatureManager.class", "strings": ["com/overlay/modules/render/PlayerESP", "ModuleManager"]},
+      {"path": "com/overlay/modules/render/PlayerESP.class", "strings": ["PlayerESP", "render", "world overlay player", "net/minecraft/client/render/WorldRenderer", "net/minecraft/client/render/entity/EntityRenderer"]}
+    ]
+  },
+  {
+    "name": "suspicious_mismatch_version",
+    "filename": "performance-1.0.0.jar",
+    "metadata": {"id": "performance", "name": "Performance", "version": "2.1.0-custom", "environment": "client"},
+    "classes": [
+      {"path": "com/custom/modules/combat/KillAura.class", "strings": ["module.combat.killaura.name", "MinecraftClient", "ClientPlayerEntity"]}
+    ],
+    "resources": {"META-INF/maven/com/custom/combat-core/pom.properties": "groupId=com.custom\nartifactId=combat-core\nversion=2.1.0-custom\n"}
+  },
+  {
+    "name": "suspicious_nonstandard_extension",
+    "filename": "core-helper.jar.disabled",
+    "metadata": {"id": "corehelper", "name": "Core Helper", "version": "1.0.0", "environment": "client"},
+    "classes": [
+      {"path": "me/client/modules/combat/TriggerBot.class", "strings": ["TriggerBot", "attack entity tick mouse click", "cps", "15"]}
+    ]
+  },
+  {
+    "name": "isolated_dead_feature",
+    "filename": "isolated_dead_feature.jar",
+    "metadata": {"id": "normalmod", "name": "Normal Mod", "version": "1.0.0", "entrypoints": {"client": ["com.normal.Main"]}},
+    "classes": [
+      {"path": "com/normal/Main.class", "strings": ["com/normal/ClientConfig", "ClientModInitializer"]},
+      {"path": "com/normal/unused/combat/Reach.class", "strings": ["Reach"]}
+    ]
+  },
+  {
+    "name": "shaded_library_false_positive",
+    "filename": "shaded_library_false_positive.jar",
+    "metadata": {"id": "shadedtest", "name": "Shaded Test", "version": "1.0.0"},
+    "classes": [
+      {"path": "com/google/gson/modules/combat/Reach.class", "strings": ["reach", "range"]}
+    ]
+  }
+]
